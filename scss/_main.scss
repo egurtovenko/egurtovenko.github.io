@@ -67,6 +67,7 @@
     width: 100%;
     padding: 15px 0;
     background-color: rgba(0, 0, 10, 0.7);
+    z-index: 1000;;
     &-wrap {
       display: flex;
       justify-content: space-between;

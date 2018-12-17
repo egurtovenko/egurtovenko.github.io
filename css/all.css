@@ -5810,6 +5810,43 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+section {
+  padding: 100px 0;
+  min-height: 100vh; }
+
+.title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 40px; }
+  .section-title:before, .section-title:after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px; }
+  .section-title:after {
+    border-right: 5px solid #333333;
+    border-bottom: 5px solid #333333;
+    bottom: 0;
+    right: 0; }
+  .section-title:before {
+    border-left: 5px solid #333333;
+    border-top: 5px solid #333333;
+    left: 0;
+    top: 0; }
+
 .main {
   background: url(../img/bigstock-Html-Web-Code-47547874.jpg);
   background-size: cover;
@@ -5883,7 +5920,8 @@ button.close {
   left: 0;
   width: 100%;
   padding: 15px 0;
-  background-color: rgba(0, 0, 10, 0.7); }
+  background-color: rgba(0, 0, 10, 0.7);
+  z-index: 1000; }
   .header__menu-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6037,3 +6075,49 @@ button.close {
 @media (max-width: 380px) {
   .header__title h1 {
     padding: 15px; } }
+
+.about {
+  background: #B0C4DE; }
+
+.portfolio {
+  background: #B0C4DE; }
+
+.footer {
+  background: #1b232e;
+  padding: 50px 0;
+  color: #fff; }
+
+.social-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px; }
+  .social__item {
+    margin-right: 15px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .social__item a {
+      color: #fff; }
