@@ -1,3 +1,53 @@
 .about {
   background: #B0C4DE;
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    p {
+      text-indent: 25px;
+      margin-bottom: 15px;
+    }
+  }
+  &__contacts {
+    width: 100%;
+    &-link {
+      color: $text-color;
+      font-size: 16px;
+      display: block;
+      margin-bottom: 15px;
+      transition: 0.5s;
+      i {
+        margin-right: 35px;
+      }
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    &-title {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+      display: block;
+    }
+  }
+}
+
+.btn-default {
+  background: $text-color;
+  border-radius: 0;
+  color: #fff;
+  transition: 0.5s;
+  i {
+    margin-right: 15px;
+  }
+  &:hover {
+    border-color: #fff;
+    background: #fff;
+    color: $text-color;
+  }
 }
